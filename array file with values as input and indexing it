@@ -1,0 +1,14 @@
+#Take array values from user & print it
+#print the index value of the given value
+from array import *
+vals=array('i',[])
+x=int(input('how many values do you want in vals: '))
+for i in range(0,x):
+    n=int(input('enter the value of array: '))
+    vals.append(n)
+print(vals)
+
+y=int(input('enter the value of which you want find the index'))
+for i in range(x-1):
+    if y==vals[i]:
+        print(i)
